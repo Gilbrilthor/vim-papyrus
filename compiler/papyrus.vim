@@ -15,17 +15,17 @@ let s:cpo_save = &cpo
 set cpo-=C
 
 if exists("skyrim_install_path")
-    let s:papyrus_compiler=skyrim_install_path.'\"Papyrus Compiler"\PapyrusCompiler.exe'
+    let s:papyrus_compiler=skyrim_install_path.'\Papyrus Compiler\PapyrusCompiler.exe'
     let s:skyrim_scripts=skyrim_install_path.'\Data\Scripts'
     let s:skyrim_source=s:skyrim_scripts.'\Source'
-    let s:skyrim_imports=s:skyrim_scripts.';'.s:skyrim_source.';'.s:skyrim_source.'\Dragonborn;'.
-                \s:skyrim_source.'\Hearthfire;'.s:skyrim_source.'\Dawnguard'
+    let s:skyrim_imports=s:skyrim_scripts.';'.s:skyrim_source.';'.s:skyrim_source.'\User;'.
+                \s:skyrim_source.'\Base'
 
-    let &g:makeprg=s:papyrus_compiler.
+    let &g:makeprg='"'.s:papyrus_compiler.'"'.
                 \' %'.
-                \' -i='.s:skyrim_imports.
-                \' -o='.s:skyrim_scripts.
-                \' -f='.s:skyrim_scripts.'\Source\TESV_Papyrus_flags.flg'
+                \' -i="'.s:skyrim_imports.'"'.
+                \' -o="'.s:skyrim_scripts.'"'.
+                \' -f="'.s:skyrim_scripts.'\Source\Base/Institute_Papyrus_Flags.flg'.'"'
 
     unlet s:skyrim_scripts s:papyrus_compiler s:skyrim_source s:skyrim_imports
 endif
