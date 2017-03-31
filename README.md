@@ -22,7 +22,7 @@ plugin bundle management tools.
 To enable quickfix compiler support, you must set the `skyrim_install_path`
 variable to the path in which Fallout is installed, eg (in your `.vimrc`):
 
-    let g:skyrim_install_path='D:\Steam\SteamApps\Common\Skyrim'
+    let g:skyrim_install_path='D:\Steam\SteamApps\Common\Fallout 4'
 
 If the variable is set, this will configure the `:make` command to compile the
 script in the current buffer using default compiler flags. Any output
