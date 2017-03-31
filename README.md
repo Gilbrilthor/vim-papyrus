@@ -2,13 +2,15 @@ Vim Plugin for the Papyrus scripting language
 =============================================
 
 A file type plugin for Vim that includes (currently rudimentary) syntax
-highlighting for the Papyrus scripting language used in TES5: Skyrim.
+highlighting for the Papyrus scripting language used in Fallout 4.
 
 There is also some quickfix mode support to run the Papyrus compiler and parse
 its error messages.
 
 For information on the Papyrus language, visit the Creation Kit website at
 http://www.creationkit.com/
+
+This was forked from https://github.com/sirtaj/vim-papyrus. Sirtaj started this work. I'm going to update it for Fallout 4.
 
 Installation
 ------------
@@ -18,7 +20,7 @@ directory. The layout is also compatible with pathogen, vundle and similar
 plugin bundle management tools.
 
 To enable quickfix compiler support, you must set the `skyrim_install_path`
-variable to the path in which Skyrim is installed, eg (in your `.vimrc`):
+variable to the path in which Fallout is installed, eg (in your `.vimrc`):
 
     let g:skyrim_install_path='D:\Steam\SteamApps\Common\Skyrim'
 
@@ -52,4 +54,4 @@ legal obligation to do so.
 Author/Maintainer
 -----------------
 
-Sirtaj Singh Kang
+Matthew Paul

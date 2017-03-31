@@ -1,7 +1,7 @@
 " Papyrus syntax file
 " Filename:     papyrus.vim
-" Language:     TES5 Papyrus scripting language
-" Maintainer:   Sirtaj Singh Kang <sirtaj@sirtaj.net>
+" Language:     Fallout 4 Papyrus scripting language
+" Maintainer:   Matthew Paul <mpaul0416@gmail.com>
 " Version:      1.0
 "
 " This is based on various references at http://www.creationkit.com/
@@ -54,7 +54,7 @@ syn match   papyrusNumber       /-0x[0-9abcdef]\+/
 syn region  papyrusString      start=/"/ skip=/\\"/ end=/"/
 syn region  papyrusArray        start=/\[/ end=/\]/ contains=ALL contained
 
-" Basic TES5 Script types via http://www.creationkit.com/Category:Script_Objects
+" Basic Fallout Script types via http://www.creationkit.com/fallout4/index.php?title=Script_Objects
 syn keyword papyrusScriptType    Action Activator ActiveMagicEffect Actor ActorBase Alias
 syn keyword papyrusScriptType    Ammo Apparatus Armor ArmorAddon AssociationType Book
 syn keyword papyrusScriptType    Cell Class ColorForm CombatStyle ConstructibleObject Container

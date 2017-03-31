@@ -1,6 +1,6 @@
 "Vim compiler file
 " Compiler: Papyrus
-" Maintainer: Sirtaj Singh Kang <sirtaj@sirtaj.net>
+" Maintainer: Matthew Paul <mpaul0416@gmail.com>
 
 "if exists("current_compiler")
 "    finish
